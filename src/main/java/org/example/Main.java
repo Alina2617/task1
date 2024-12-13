@@ -24,7 +24,7 @@ public class Main {
     public static double calculateFunctionValue(double x) {
         double y = Math.asin(Math.sqrt(Math.abs(x)) / (Math.sqrt(Math.abs(x)) + 1));
         y = Math.pow(y, 5);
-        y += Math.pow(Math.sqrt(x * x + 1), 0.2);
+        y += Math.pow((x * x + 1), 0.2);
 
         double w = Math.sin(x);
         double v = Math.abs(x);
